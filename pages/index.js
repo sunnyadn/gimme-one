@@ -1,9 +1,22 @@
+import {Container, FormControl, InputLabel, MenuItem, Select} from "@mui/material";
+
+import provinces from '../data/provinces.json'
+
 export default function Home() {
   return (
-    <div className="flex items-center width-full flex-col mt-8">
-      <h1 className="text-3xl">
+    <Container>
+      <h1>
         Gimme a Direction!
       </h1>
-    </div>
+      <FormControl fullWidth>
+        <InputLabel id="select-province">省/直辖市</InputLabel>
+        <Select
+          labelId="select-province"
+          label="省/直辖市"
+        >
+          {provinces.map(province => (<MenuItem key={province.code} value={province.code}>{province.name}</MenuItem>))}
+        </Select>
+      </FormControl>
+    </Container>
   )
 }
