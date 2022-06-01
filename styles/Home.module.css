@@ -1,3 +1,27 @@
 .selects {
   margin-top: 60px;
 }
+
+.imageList {
+  margin-top: 20px;
+}
+
+.listItem {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+}
+
+.description {
+  margin: 5px 10px;
+}
+
+.rating {
+  font-size: .8rem;
+  color: #efb13d;
+  margin-left: 2px;
+}
